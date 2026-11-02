@@ -675,6 +675,29 @@ main {
   filter: saturate(1.1) brightness(1.05);
 }
 
+@media (max-width: 600px) {
+  .card {
+    padding: 22px 18px;
+  }
+
+  .feature-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .feature-grid li {
+    min-width: 0;
+  }
+
+  .feature-grid li > span:last-child {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .shot {
+    width: min(100%, 340px);
+  }
+}
+
 .btn {
   display: inline-block;
   text-decoration: none;
